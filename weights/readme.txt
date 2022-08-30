@@ -1,0 +1,1 @@
+yolov5l_head.pt权重是使用人头数据集SCUT_HEAD_Part_A_B在yolov5-5.0上使用预训练权重finetuning的结果

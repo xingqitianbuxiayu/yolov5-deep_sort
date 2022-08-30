@@ -1,0 +1,1 @@
+prepare_person.py主要是对train_data-->raw-->Market-1501-v15.09.15数据集的处理，会在Market-1501-v15.09.15文件夹中生成一个pytorch文件夹，里面包含了训练要用到的train和val文件夹
