@@ -4,7 +4,7 @@
 
 **对于一个如下场景的监控视频（摄像头安装在门框正上方），需要统计出视频中进出门的人数。**
 
-![image-20220830134934528](C:\Users\杰的小屋\AppData\Roaming\Typora\typora-user-images\image-20220830134934528.png)
+![image-20220830134934528](./test_data/image-20220830134934528.png)
 
 ```
 直接使用yolov5的预训练权重去检测效果很差，因此选择使用yolov5的预训练权重在SCUT-HEAD头部检测数据集做finetuning，最后再结合deepsort和画线检测策略完成对人数的统计。
@@ -98,8 +98,8 @@ yolov5-deep_sort
 
 1.下载yolov5代码及预训练权重，在SCUT-HEAD头部检测数据集上做finetuning。
 
-- 在https://github.com/ultralytics/yolov5/tree/v5.0下载代码以及https://github.com/ultralytics/yolov5/releases/tag/v5.0预训练权重
-- 在https://aistudio.baidu.com/aistudio/datasetdetail/104969/0下载好数据集，将其VOC(xml格式)转换成yolo(txt格式)，并划分好训练集和验证集
+- 在 https://github.com/ultralytics/yolov5/tree/v5.0 下载代码以及 https://github.com/ultralytics/yolov5/releases/tag/v5.0 预训练权重
+- 在 https://aistudio.baidu.com/aistudio/datasetdetail/104969/0 下载好数据集，将其VOC(xml格式)转换成yolo(txt格式)，并划分好训练集和验证集
 - 在yolov5-5.0-->data文件夹和yolov5-5.0-->models文件夹中分别准备好对应的数据和模型yaml配置文件，并修改配置参数
 - 修改yolov5-5.0-->train.py文件中的--weight、--cfg、--data、--epochs、--batch-size、--img-size、--device参数，开始训练
 
