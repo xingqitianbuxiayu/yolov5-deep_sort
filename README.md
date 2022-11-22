@@ -94,7 +94,7 @@ yolov5-deep_sort
 
 > 以下内容，第1部分的代码未给出，只说明怎么做，详细训练见（先占坑，后续会写一下使用自己的数据集训练yolov5）
 >
-> 上述中的预训练权重和数据集都未上传到Github
+> 上述中的yolov5预训练权重和SCUT-HEAD头部检测数据集都未上传到Github
 
 1.下载yolov5代码及预训练权重，在SCUT-HEAD头部检测数据集上做finetuning。
 
